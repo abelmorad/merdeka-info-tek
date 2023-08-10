@@ -1,4 +1,5 @@
-
+import { Link } from "react-scroll";
+import { useState } from "react";
 
 export const NavbarMenu = [
   {
@@ -32,3 +33,38 @@ export const NavbarMenu = [
     classname:"hover:text-orange-400 cursor-pointer",
   },
 ]
+
+
+
+const NavBarDesktop = () => {
+   const [activeSection, setActiveSection] = useState<number | null>(null);
+
+   const HandleSection = (section: number) => {
+    setActiveSection(section);
+   };
+return(
+   <nav className="tablet:flex gap-4 font-medium mobile:hidden">
+       
+          {NavbarMenu.map((item) => {
+            return(
+                <Link
+                key={item.id}
+          activeClass="text-orange-400"
+          to={item.to}
+          onClick={() => HandleSection(item.id)}
+            className={`${
+              activeSection === item.id
+                ? 'text-orange-400'
+                : 'text-black'
+            } hover:text-orange-400 cursor-pointer`}
+        >
+          {item.title}
+        </Link>
+            )
+          })}
+        
+      </nav>
+)
+}
+
+export default NavBarDesktop
