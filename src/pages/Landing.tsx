@@ -8,7 +8,7 @@ function Landing() {
         <p className="mb-5">
           We design, build, and deploy for enterprises
         </p>
-      <a href="#" className="bg-white text-black text-lg font-medium rounded-md px-7 py-1 laptop:px-10 laptop:py-2 hover:text-white hover:bg-orange-400">Let's Work</a>
+      <a href="#contact-us" className="bg-white text-black text-lg font-medium rounded-md px-7 py-1 laptop:px-10 laptop:py-2 hover:text-white hover:bg-orange-400">Let's Work</a>
     </section>
   );
 }

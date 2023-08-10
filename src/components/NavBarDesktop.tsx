@@ -7,7 +7,6 @@ function NavBarDesktop() {
         <a className="hover:text-orange-400" href="#" >Home</a>
         <a className="hover:text-orange-400" href="#about-us" >About</a>
         <a className="hover:text-orange-400" href="#services">Services</a>
-        <a className="hover:text-orange-400" href="#portfolio">Portfolio</a>
         <a className="hover:text-orange-400" href="#contact-us">Contact Us</a>
     </nav>
   )
