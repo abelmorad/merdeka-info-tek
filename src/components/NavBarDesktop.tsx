@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import { useState } from "react";
 
+
 export const NavbarMenu = [
   {
     id:0,
@@ -65,6 +66,5 @@ return(
         
       </nav>
 )
-}
 
 export default NavBarDesktop
