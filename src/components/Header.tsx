@@ -1,11 +1,14 @@
 import logo from "../../public/logo/merdaka.png";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+
 import NavBarMobile from "./NavBarMobile";
 import { useState } from "react";
 import NavBarDesktop from "./NavBarDesktop";
 
+
 function Header() {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -22,7 +25,7 @@ function Header() {
           <br /> Teknologi
         </p>
       </div>
-      <NavBarDesktop />
+     <NavBarDesktop/>
       <NavBarMobile
         style={openMenu ? { display: "flex" } : { display: "none" }}
         closeBtn={() => setOpenMenu(!openMenu)}

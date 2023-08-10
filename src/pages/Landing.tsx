@@ -1,9 +1,11 @@
 
 function Landing() {
   return (
-    <section id="#" className="flex flex-col text-white text-center place-content-center items-center hero-bg h-screen w-screen mobile:px-4 mobile:py-20 tablet:px-32 laptop:px-72">
-        <h1 className="uppercase text-4xl laptop:text-5xl font-bold mb-1">
-          engineering the web for <span className="text-orange-400">you</span>
+
+    <section id="landing" className="flex flex-col text-white items-start place-content-center hero-bg h-screen w-screen mobile:px-4 mobile:py-20 mobile:text-center mobile:items-center tablet:items-start tablet:text-start tablet:px-32 laptop:px-72">
+        <h1 className="capitalize text-4xl laptop:text-5xl font-bold mb-1">
+          let's build your web application!
+
         </h1>
         <p className="mb-5">
           We design, build, and deploy for enterprises
