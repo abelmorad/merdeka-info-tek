@@ -1,11 +1,18 @@
 import logo from "../../public/logo/merdaka.png";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import {Link} from "react-scroll";
 import NavBarMobile from "./NavBarMobile";
 import { useState } from "react";
-import NavBarDesktop from "./NavBarDesktop";
+import {NavbarMenu} from "./NavBarDesktop";
+
 
 function Header() {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+   const [activeSection, setActiveSection] = useState<number | null>(null);
+
+   const HandleSection = (section: number) => {
+    setActiveSection(section);
+   };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -22,7 +29,26 @@ function Header() {
           <br /> Teknologi
         </p>
       </div>
-      <NavBarDesktop />
+      <nav className="tablet:flex gap-4 font-medium mobile:hidden">
+       
+          {NavbarMenu.map((item) => {
+            return(
+                <Link
+          activeClass="text-orange-400"
+          to={item.to}
+          onClick={() => HandleSection(item.id)}
+            className={`${
+              activeSection === item.id
+                ? 'text-orange-400'
+                : 'text-black'
+            } hover:text-orange-400 cursor-pointer`}
+        >
+          {item.title}
+        </Link>
+            )
+          })}
+        
+      </nav>
       <NavBarMobile
         style={openMenu ? { display: "flex" } : { display: "none" }}
         closeBtn={() => setOpenMenu(!openMenu)}

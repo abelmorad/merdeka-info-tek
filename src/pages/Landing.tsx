@@ -1,7 +1,7 @@
 
 function Landing() {
   return (
-    <section id="#" className="flex flex-col text-white items-start place-content-center hero-bg h-screen w-screen mobile:px-4 mobile:py-20 mobile:text-center mobile:items-center tablet:items-start tablet:text-start tablet:px-32 laptop:px-72">
+    <section id="landing" className="flex flex-col text-white items-start place-content-center hero-bg h-screen w-screen mobile:px-4 mobile:py-20 mobile:text-center mobile:items-center tablet:items-start tablet:text-start tablet:px-32 laptop:px-72">
         <h1 className="capitalize text-4xl laptop:text-5xl font-bold mb-1">
           let's build your web application!
         </h1>
