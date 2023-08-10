@@ -2,22 +2,21 @@ function Contact() {
   return (
     <div
       id="contact-us"
-      className="flex flex-col bg-black gap-8 text-white text-center items-center px-6 py-28 tablet:px-32"
+      className="flex flex-col bg-black gap-8 text-white text-center items-center px-6 py-28 tablet:px-32 desktop:px-72"
     >
-      <h2 className="capitalize text-3xl font-semibold">
-        reach out to us
-      </h2>
+      <h2 className="capitalize text-3xl font-semibold">reach out to us</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed explicabo
-        nisi iste mollitia repudiandae laborum ipsa nemo earum cumque ducimus
-        molestias quos quia fuga maiores dignissimos dolores, modi atque
-        suscipit?
+        We're just one click away to help you take your company from
+        great to incredible. Fill in the form to share more details about your
+        project.
       </p>
 
       <form className="flex flex-col w-full text-start">
         <div className="flex flex-col laptop:flex-row laptop:gap-10 w-full">
           <div className="flex flex-col w-full">
-            <label className="mb-1" htmlFor="fname">Enter your first name</label>
+            <label className="mb-1" htmlFor="fname">
+              Enter your first name
+            </label>
             <input
               type="text"
               name="fname"
@@ -25,7 +24,9 @@ function Contact() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className="mb-1" htmlFor="lname">Enter your last name</label>
+            <label className="mb-1" htmlFor="lname">
+              Enter your last name
+            </label>
             <input
               type="text"
               name="lname"
@@ -35,7 +36,9 @@ function Contact() {
         </div>
         <div className="flex flex-col laptop:flex-row laptop:gap-10">
           <div className="flex flex-col w-full">
-            <label className="mb-1" htmlFor="email">Enter your email</label>
+            <label className="mb-1" htmlFor="email">
+              Enter your email
+            </label>
             <input
               type="text"
               name="email"
@@ -43,7 +46,9 @@ function Contact() {
             />
           </div>
           <div className="flex flex-col w-full">
-            <label className="mb-1" htmlFor="phone">Enter your mobile number</label>
+            <label className="mb-1" htmlFor="phone">
+              Enter your mobile number
+            </label>
             <input
               type="tel"
               name="phone"
@@ -51,7 +56,9 @@ function Contact() {
             />
           </div>
         </div>
-        <label className="mb-1 mt-5" htmlFor="message">Enter your message</label>
+        <label className="mb-1 mt-5" htmlFor="message">
+          Tell us about your project
+        </label>
         <textarea
           name="message"
           className="rounded-md text-black p-2 text-sm mb-2"

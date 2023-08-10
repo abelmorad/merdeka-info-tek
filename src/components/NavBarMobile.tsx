@@ -30,9 +30,6 @@ function NavBarMobile({ style, closeBtn }: { style: any; closeBtn: any }) {
         <a onClick={closeBtn} href="#services">
           Services
         </a>
-        <a onClick={closeBtn} href="#portfolio">
-          Portfolio
-        </a>
         <a onClick={closeBtn} href="#contact-us">
           Contact Us
         </a>
